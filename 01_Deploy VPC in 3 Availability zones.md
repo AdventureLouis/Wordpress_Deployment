@@ -26,3 +26,7 @@ Under "Number of private subnet" choose 3
 Under "NAT gateways ($)" choose "in 1 AZ" the reason we have decided to choose this option is to reduce cost thereby having a nat gate only in one availability zone and it will be shared by resources in other availabilty zones and also note that nat gateway is only associated to the private subnets while the internet gateway(IGW) is associated to the public subnets.
 <br>
 Under "VPC endpoints" choose None  and this because for now we dont need s3 bucket endpoint.Finally click create vpc
+<br>
+As we can see in below diagram,the VPC and related resources is creating so wait for a while
+
+![VPC3](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/cd00b5ee-05a6-41d8-bb8b-f182fd0bf655)
