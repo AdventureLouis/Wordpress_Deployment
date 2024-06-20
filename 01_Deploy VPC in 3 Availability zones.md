@@ -30,3 +30,9 @@ Under "VPC endpoints" choose None  and this because for now we dont need s3 buck
 As we can see in below diagram,the VPC and related resources is creating so wait for a while
 
 ![VPC3](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/cd00b5ee-05a6-41d8-bb8b-f182fd0bf655)
+
+### View VPC and resource map
+Below we can see the newly created VPC and its resources
+
+![VPC4](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/4fa93294-686e-4340-886f-6351b149fc50)
+)
