@@ -36,3 +36,4 @@ Below we can see the newly created VPC and its resources
 
 ![VPC4](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/4fa93294-686e-4340-886f-6351b149fc50)
 )
+
