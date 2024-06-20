@@ -1,4 +1,4 @@
-### launch EC2 instance using Amazon Linux 2(AL2)
+### Launch EC2 instance using Amazon Linux 2(AL2)
 
 ![DIagram_Architecture](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/f27b9186-75fd-4ce5-85ab-68372a9c5959)
 
