@@ -1,4 +1,7 @@
 ### VPC Deployment in three Availabilty zones
+
+![DIagram_Architecture](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/796daac1-258c-4727-9aa5-e6d45a40a2e2)
+
 <br>
 In this course I will be utilizing AWS Management console,so open your amazon management console click on the search bar and type VPC,
 and when the VPC page opens,click on "VPC and more",by clicking VPC and more you will be able to create VPC and many other resources such as public and private subnets,route-tables etc
