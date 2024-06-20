@@ -1,1 +1,1 @@
-# -Wordpress_Deployment_To_AWS_2
+# Wordpress_Deployment_To_AWS_2
