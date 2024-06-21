@@ -51,7 +51,7 @@ Under "Source type" choose "My IP"
 <br>
 
 ![EC2_5](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/027e60cd-22f0-477a-8717-932dce7fd409)
-After creating the EC2 instance you can see above that it is successfullt created
+After creating the EC2 instance you can see above that it is successfully created
 
 
 
