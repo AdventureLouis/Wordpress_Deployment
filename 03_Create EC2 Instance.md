@@ -19,24 +19,24 @@ Under Application and OS Images (Amazon Machine Image),type Amazon linux
 Under Amazon Machine Image (AMI),choose "Amazon Linux 2 AMI(HVM) - Kernel 5.0,SSD Volume Type" as seen above
 <br>
 
+![EC2_3](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/a4dba929-fa95-4833-aedc-bf98c20d901d)
 
-![EC2_3](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/bf823deb-a4ec-41da-99c9-2ec978b19102)
 
 Under "Instance type" choose t2.micro
 <br>
 Under "Key pair (login)" choose your key pair that you already created(If you'd like to know how to create a key pair,check my repo "Host-a-wordpress-website-in-AWS" n0.7)
 <br>
+Under VPC choose the VPC we just created
+<br>
+Under Subnet,choose a public subnet
+<br>
+Under "Auto-assign public IP" set it to disable because we will be launching the ec2 in private subnet
 Under "Network settings",click edit 
 <br>
 
 ![EC2_4](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/6856bd1c-2184-45e7-b1c4-8efc6335b6f6)
 
 
-Under VPC choose the VPC we just created
-<br>
-Under Subnet,choose a public subnet
-<br>
-Under "Auto-assign public IP" set it to enable
 <br>
 Under "Firewall (security groups)",select create security group 
 <br>
