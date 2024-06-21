@@ -58,29 +58,9 @@ After creating the EC2 instance you can see above that it is successfully create
 
 To ensure that your newly launched EC2 is ready to use,make sure under "Instance state" its showing "Running" and under "status-check" its showing "2/2 checks passed" and this can be seen highlighted above
 
-#### Configure Resource Group
-<br>
-Its time to add more configuration to the resource we creating when we where creating the EC2 instance
-<br>
-The configuration will be adding HTTP on port 80 and HTTPS on port 443
-<br>
-
-![EC2_10](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/f1406b59-79eb-4153-ba5c-ca9e10f104d0)
-
-To achieve this,check on the box next to your ec2 instance and under security tab you will see the security group we created now click to open it
-<br>
-
-![EC2_11](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/e54db8b3-eaad-45ae-a5d4-2abb638285a0)
-
-Now its open,click on "Edit inbound rules" as seen above,we want to add more rules so our ec2  can be able to access the internet on port 80 etc 
-<br>
-
-![EC2_12](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/6ff0216b-ef68-4162-826d-8554483edde1)
 
 
-Click add rule and under "Type" choose HTTP,under "Protocole" choose "TCP",under "port range" choose 80,under "source" choose anywhere-IPV4
-<br>
-Again Click add rule and under "Type" choose HTTPS,under "Protocole" choose "TCP",under "port range" choose 443,under "source" choose anywhere-Ipv4 and finally click save rules
+
 
 ### Create Bastion EC2 Instance
 <br>
@@ -119,4 +99,37 @@ Under "Network settings",click edit
 Under "Firewall (security groups)",select Create new security group
 <br>
 Give the security group a name as seen above,set "Type" to "SSH",set "source Type" to "MY IP",set "protocole" to "TCP",set" port range" to "22"
+
+#### Configure Resource Group
+<br>
+Its time to add more configuration to the resource we creating when we where creating the EC2 instance
+<br>
+The configuration will be adding HTTP on port 80 and HTTPS on port 443
+<br>
+
+![EC2_10](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/f1406b59-79eb-4153-ba5c-ca9e10f104d0)
+
+To achieve this,check on the box next to your ec2 instance and under security tab you will see the security group we created now click to open it
+<br>
+
+![EC2_11](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/e54db8b3-eaad-45ae-a5d4-2abb638285a0)
+
+Now its open,click on "Edit inbound rules" as seen above,we want to add more rules so our ec2  can be able to access the internet on port 80 etc 
+<br>
+
+![EC2_12](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/6ff0216b-ef68-4162-826d-8554483edde1)
+
+
+Click add rule and under "Type" choose HTTP,under "Protocole" choose "TCP",under "port range" choose 80,under "source" choose anywhere-IPV4
+<br>
+Again Click add rule and under "Type" choose HTTPS,under "Protocole" choose "TCP",under "port range" choose 443,under "source" choose anywhere-Ipv4 and finally click save rules
+<br>
+
+![EC2-16](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/537fef66-e3c2-46f5-bef6-6b9d311697ce)
+
+Seems we know that we cannot ssh with this EC2 instance that is in a private subnet,delete the ssh  as seen above
+<br>
+
+Click add rules again,under "Type" choose SSH,under "Protocole" choose "TCP",under "port range" choose 22,under "source" choose custom
+in the search bar search for "the Bastion-sg" we previously created and click save rules
 
