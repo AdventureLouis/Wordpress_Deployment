@@ -19,7 +19,8 @@ Under Application and OS Images (Amazon Machine Image),type Amazon linux
 Under Amazon Machine Image (AMI),choose "Amazon Linux 2 AMI(HVM) - Kernel 5.0,SSD Volume Type" as seen above
 <br>
 
-![EC2_3](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/dd59d184-6ab0-453f-bd32-8acb3186383b)
+
+![EC2_3](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/bf823deb-a4ec-41da-99c9-2ec978b19102)
 
 Under "Instance type" choose t2.micro
 <br>
@@ -33,7 +34,7 @@ Under "Network settings",click edit
 
 Under VPC choose the VPC we just created
 <br>
-Under Subnet,choose a private subnet
+Under Subnet,choose a public subnet
 <br>
 Under "Auto-assign public IP" set it to enable
 <br>
