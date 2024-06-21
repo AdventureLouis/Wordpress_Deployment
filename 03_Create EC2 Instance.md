@@ -73,6 +73,10 @@ To achieve this,check on the box next to your ec2 instance and under security ta
 
 Now its open,click on "Edit inbound rules" as seen above,we want to add more rules so our ec2  can be able to access the internet on port 80 etc 
 <br>
+
+![EC2_12](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/6ff0216b-ef68-4162-826d-8554483edde1)
+
+
 Click add rule and under "Type" choose HTTP,under "Protocole" choose "TCP",under "port range" choose 80,under "source" choose anywhere-IPV4
 <br>
 Again Click add rule and under "Type" choose HTTPS,under "Protocole" choose "TCP",under "port range" choose 443,under "source" choose anywhere-Ipv4 and finally click save rules
