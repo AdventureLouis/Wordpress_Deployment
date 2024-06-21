@@ -57,6 +57,24 @@ After creating the EC2 instance you can see above that it is successfully create
 
 To ensure that your newly launched EC2 is ready to use,make sure under "Instance state" its showing "Running" and under "status-check" its showing "2/2 checks passed" and this can be seen highlighted above
 
+#### Configure Resource Group
+<br>
+Its time to add more configuration to the resource we creating when we where creating the EC2 instance
+<br>
+The configuration will be adding HTTP on port 80 and HTTPS on port 443
+<br>
 
+![EC2_10](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/f1406b59-79eb-4153-ba5c-ca9e10f104d0)
+
+To achieve this,check on the box next to your ec2 instance and under security tab you will see the security group we created now click to open it
+<br>
+
+![EC2_11](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/e54db8b3-eaad-45ae-a5d4-2abb638285a0)
+
+Now its open,click on "Edit inbound rules" as seen above,we want to add more rules so our ec2  can be able to access the internet on port 80 etc 
+<br>
+Click add rule and under "Type" choose HTTP,under "Protocole" choose "TCP",under "port range" choose 80,under "source" choose anywhere-IPV4
+<br>
+Again Click add rule and under "Type" choose HTTPS,under "Protocole" choose "TCP",under "port range" choose 443,under "source" choose anywhere-Ipv4 and finally click save rules
 
 
