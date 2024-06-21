@@ -28,7 +28,7 @@ Under "Key pair (login)" choose your key pair that you already created(If you'd 
 <br>
 Under VPC choose the VPC we just created
 <br>
-Under Subnet,choose a public subnet
+Under Subnet,choose a private subnet
 <br>
 Under "Auto-assign public IP" set it to disable because we will be launching the ec2 in private subnet
 Under "Network settings",click edit 
@@ -82,4 +82,41 @@ Click add rule and under "Type" choose HTTP,under "Protocole" choose "TCP",under
 <br>
 Again Click add rule and under "Type" choose HTTPS,under "Protocole" choose "TCP",under "port range" choose 443,under "source" choose anywhere-Ipv4 and finally click save rules
 
+### Create Bastion EC2 Instance
+<br>
+As we know,we will be unable to ssh into our instance because it is currently in private subnet and so we will create a bastion EC2 instance
+<br>
+On you AWS Managemnt console locate the search bar at the top and type EC2,on the EC2 page,click launch instance on the upper right corner
+<br>
+
+
+![EC2_13](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/1703b7f6-2efb-40ce-bd69-bfe572bc5046)
+
+Under name type the name of your ec2 instance as 
+<br>
+Under Application and OS Images (Amazon Machine Image),type Amazon linux
+<br>
+Under Amazon Machine Image (AMI),choose "Amazon Linux 2 AMI(HVM) - Kernel 5.0,SSD Volume Type" as seen above
+<br>
+
+![EC2_14](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/d519e497-d598-41f3-9c10-12dcdede1dca)
+
+![EC2_15](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/de82de5b-39d4-4797-b8ac-ebe1a1f34dd1)
+
+
+
+Under "Instance type" choose t2.micro
+<br>
+Under "Key pair (login)" choose your key pair that you already created(If you'd like to know how to create a key pair,check my repo "Host-a-wordpress-website-in-AWS" n0.7)
+<br>
+Under VPC choose the VPC we just created
+<br>
+Under Subnet,choose a public subnet
+<br>
+Under "Auto-assign public IP" set it to enable because we want IPV4
+Under "Network settings",click edit 
+<br>
+Under "Firewall (security groups)",select Create new security group
+<br>
+Give the security group a name as seen above,set "Type" to "SSH",set "source Type" to "MY IP",set "protocole" to "TCP",set" port range" to "22"
 
