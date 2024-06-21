@@ -19,7 +19,7 @@ Under Application and OS Images (Amazon Machine Image),type Amazon linux
 Under Amazon Machine Image (AMI),choose "Amazon Linux 2 AMI(HVM) - Kernel 5.0,SSD Volume Type" as seen above
 <br>
 
-![EC2_3](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/0bc42067-e793-4d0e-b72f-0d3b62f1e90e)
+![EC2_3](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/dd59d184-6ab0-453f-bd32-8acb3186383b)
 
 Under "Instance type" choose t2.micro
 <br>
@@ -35,7 +35,7 @@ Under VPC choose the VPC we just created
 <br>
 Under Subnet,choose a private subnet
 <br>
-Under "Auto-assign public IP" leave at disable
+Under "Auto-assign public IP" set it to enable
 <br>
 Under "Firewall (security groups)",select create security group 
 <br>
