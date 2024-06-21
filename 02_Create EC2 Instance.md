@@ -28,9 +28,7 @@ Under "Key pair (login)" choose your key pair that you already created(If you'd 
 Under "Network settings",click edit 
 <br>
 
-![EC2_4](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/6514ab3b-cd9e-4599-af04-529c2bff34a6)
-
-
+![EC2_4](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/6856bd1c-2184-45e7-b1c4-8efc6335b6f6)
 
 
 Under VPC choose the VPC we just created
@@ -52,6 +50,12 @@ Under "Source type" choose "My IP"
 
 ![EC2_5](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/027e60cd-22f0-477a-8717-932dce7fd409)
 After creating the EC2 instance you can see above that it is successfully created
+<br>
+
+![EC2_6](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/9e1563bf-ef0f-46f5-9c05-5ce11cb84f69)
+
+
+To ensure that your newly launched EC2 is ready to use,make sure under "Instance state" its showing "Running" and under "status-check" its showing "2/2 checks passed" and this can be seen highlighted above
 
 
 
