@@ -65,15 +65,27 @@ Now that we are inside the bastion server,create a new file called "demoEC2key.p
 Use commands below in your terminal
 
 ```bash
-nano demoEC2key.pem -> This command will open the nano text editor and  help to create a file with name "demoEC2key.pem"
+nano demoEC2key.pem -> This command will open the nano text editor and  help to create a file where you can paste the primary key content
 press cnrtl x--> This command will close your nano file
 press y + enter on your keyboard --> This command save your new changes in nano
 Type chmod 400 "demoEC2key.pem" --> This command will grant permission to bastion
 ssh -i "demoEC2key.pem" ec2-user@10.0.154.93 --> This command will be used to ssh into the ec2 in private subnet
 ```
+
 <br>
-All commands above can be seen in below 👇  image
+nano demoEC2key.pem
 
 ![EC2_19](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/e913f8ab-e72e-4071-b1b2-7c1fe309dfc2)
+<br>
+nano demoEC2key.pem 
+<br>
+press cnrtl x
+<br>
+press y + enter on your keyboard 
+<br>
+Type chmod 400 "demoEC2key.pem" 
+<br>
+ssh -i "demoEC2key.pem" ec2-user@10.0.154.93 
+<br>
 
 ![EC2_18](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/b7814662-d3a7-4df1-8b43-be411df32783)
