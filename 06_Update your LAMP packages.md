@@ -4,8 +4,4 @@
 <br>
 Now you need to ssh in your ec2 instance and update LAMP(Linux,Apache,Mysql,PHP) services.In order to be able to successfully install the wordpress we need all these services.
 <br>
-In order to ssh into your ec2 instance,your first need to navigate to directory where you have your key pair installed
-<br>
-
-for example if your primary kehy pair that you downlaoded from AWS is 
-is saved in your  document directory then you have to open your terminal  navigate your document directory
+After you ssh into your ec2 through your bastion you 
