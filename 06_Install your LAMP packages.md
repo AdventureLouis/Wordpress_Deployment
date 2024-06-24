@@ -5,12 +5,14 @@
 Now you need to ssh in your ec2 instance,update the ec2 to latest version and install LAMP(Linux,Apache,Mysql,PHP) services.In order to be able to successfully install the wordpress we need all these services.
 <br>
 
-#### Install Apache http webserver and Mariadb
+#### Install Apache http webserver,Mariadb10.5 and PHP8.2
 After you ssh into your ec2 through your bastion server,run below commands
 
 ``` bash
 sudo yum update -y
 sudo amazon-linux-extras install mariadb10.5
+cat /etc/system-release
+sudo amazon-linux-extras install php8.2
 sudo yum install -y httpd
 yum info package_name
 sudo systemctl start httpd
@@ -21,6 +23,10 @@ sudo systemctl is-enabled httpd
 sudo yum update -y --> This command will update your ec2 instance to latest version and the flag y (-y) will help to automatically keep responding "yes" when promoted to respond
 <br>
 sudo amazon-linux-extras install mariadb10.5 --> This command will help to install the mariadb version 10.5
+<br>
+cat /etc/system-release -->
+<br>
+sudo amazon-linux-extras install php8.2 -->
 <br>
 sudo yum install -y httpd --> This command will help to install the http webserver and the flag y(-y) will help to automatically keep responding "yes" to prompts that needs response
 <br>
@@ -69,8 +75,9 @@ sudo yum list installed httpd mariadb-server php-mysqlnd --> This command will i
 rm /var/www/html/phpinfo.php -->This command will delete the file phpinfo.php
 
 
-#### Install Maridb database
+#### Secure  Maridb database server
 <br>
+Recall that we have previously installed the mariadb database,now we need to remove every insecure installation from the mariadb
 
 ```bash
 sudo systemctl start mariadb
