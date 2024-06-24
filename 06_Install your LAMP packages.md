@@ -38,7 +38,7 @@ sudo systemctl enable httpd --> This command can help to initiate the http webse
 <br>
 sudo systemctl is-enabled httpd --> This command will help to check to see if the http webserver is enabled
 
-#### Set file permissions to Apache server
+#### Set file permissions to 
 <br>
 
 ```bash
