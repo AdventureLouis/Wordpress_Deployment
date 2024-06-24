@@ -87,6 +87,8 @@ CREATE USER 'wordpress-user'@ IDENTIFIED BY 'your_strong_password';
 CREATE DATABASE `wordpress-db`;
 GRANT ALL PRIVILEGES ON `wordpress-db`.* TO "wordpress-user"@"localhost";
 FLUSH PRIVILEGES;
+show database;
+exit
 ```
 <br>
 Note that from AWS documention a variation of above command is "CREATE USER 'wordpress-user'@'localhost' IDENTIFIED BY 'your_strong_password';" but in our own command we wont include "localhost" and the reason is because our RDs is not running on our local server rather it is running on ec2 server
@@ -99,7 +101,10 @@ CREATE DATABASE `wordpress-db`; --> This command will help create your database 
 <br>
 GRANT ALL PRIVILEGES ON `wordpress-db`.* TO "wordpress-user"; --> This command will grant all privileges of wordpress database to wordpress user 1.e GRANT ALL PRIVILEGES ON `wordpress-db1`.* TO "loui-mariadb1";
 <br>
+
 After running all commands above,type "show databses" to show your database
+<br>
+And finally type exit to exit from mysql client
 <br>
 
 ![RDS23](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/afbfd189-13d3-42e1-ab8e-7d1739b18c2e)
@@ -107,5 +112,18 @@ After running all commands above,type "show databses" to show your database
 ![RDS24](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/2a946779-2623-4d00-9d02-55678cc45308)
 <br>
 
+ ### Create and edit wp-config.php file
+The wp-config.php is a wordpress confgiguration file,now we want to edit this file but we dont want the edit to be implemented on the original file so we create a new file called wp-config-sample.php which will serve as a backup file and edit the original file,use commands below
+<br>
+```bash
+cp wordpress/wp-config-sample.php wordpress/wp-config.php
+nano wordpress/wp-config.php
+```
+<br>
+cp wordpress/wp-config-sample.php wordpress/wp-config.php --> With this command a new file called wp-config-sample.php will be created and all contents from wp-config.php will be copied into the new file
+<br>
+nano wordpress/wp-config.php --> This command will open  wp-config.php file in nano text editor as seen below 👇 
+
+![RDS25](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/06b81e19-3aa6-4fc0-b823-73300429a4f9)
 
 
