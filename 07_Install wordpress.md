@@ -173,10 +173,17 @@ sudo nano /etc/httpd/conf/httpd.conf --> This command will the httpd configurati
 <br>
 Once  httpd configuration file(httpd.conf) is open use command cntrl+w to open a search bar on nano and once the search bar is open paste
 
- ```  <Directory "/var/www/html"> ```  to find it and change "AllowOverride None" to "AllowOverride All" as shown below
+ ```  <Directory "/var/www/html"> ```  to find it and change "AllowOverride None" to "AllowOverride All" then save
 <br>
  
 ![RDS28](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/ca1ceb5f-ff87-4a55-92b0-f1cf01b86962)
 
+#### Install php graphics drawing library
+<br>
+
+``` bash
+sudo yum install php-gd
+sudo yum list installed php-gd
+```
 
 
