@@ -82,8 +82,10 @@ Recall that we have previously installed the mariadb database,now we need to rem
 ```bash
 sudo systemctl start mariadb
 sudo mysql_secure_installation
-
 ```
-
+<br>
+sudo systemctl start mariadb --> This command will start the mariadb
+<br>
+sudo mysql_secure_installation --> This command will enable the secure installation of mysql
 
 
