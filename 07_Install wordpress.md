@@ -67,4 +67,41 @@ mysql -u your user name -h your DNS endpoint -p --> With this command after flag
 
 ![RDS21](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/7d0edb85-a475-471f-9265-f0cf5b88b164)
 
-To get your DNS endpoint,open you AWS managment console on the search bar type RDS,click "Databases",once your database is open click on it to open your database,Under "Connectivity & security",on the left part you will see
+To get your DNS endpoint,open you AWS managment console on the search bar type RDS,click "Databases",once your database is open click on it to open your database,Under "Connectivity & security",on the left part you will see "Endpoint" that is your database endpoint name,copy it
+<br>
+1.e mysql -h loui-mariadb.c3oi6ac4utl8.eu-west-1.rds.amazonaws.com -u Adminloui -p
+<br>
+So once  you run above command,you can now view your databases,to view your databases use command
+<br>
+```bash
+show database;
+```
+<br>
+After running above command,you should see below 👇 
+![RDS22](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/bf12c4c2-7f2e-4776-b455-acefe0b77ab0)
+
+### Create a user for your Mariadb Database
+We have been able to successfully ssh into our mariadb database now its time to create a user and password for our database with below commands
+```bash
+CREATE USER 'wordpress-user'@ IDENTIFIED BY 'your_strong_password';
+CREATE DATABASE `wordpress-db`;
+GRANT ALL PRIVILEGES ON `wordpress-db`.* TO "wordpress-user"@"localhost";
+FLUSH PRIVILEGES;
+```
+<br>
+Note that from AWS documention a variation of above command is "CREATE USER 'wordpress-user'@'localhost' IDENTIFIED BY 'your_strong_password';" but in our own command we wont include "localhost" and the reason is because our RDs is not running on our local server rather it is running on ec2 server
+<br>
+CREATE USER 'wordpress-user'@ IDENTIFIED BY 'your_strong_password'; --> This command will help us to create our database user and strong password
+<br>
+1.e CREATE USER 'loui-mariadb1'@ IDENTIFIED BY 'your_strong_password';
+<br>
+CREATE DATABASE `wordpress-db`; --> This command will help create your database name 1.e CREATE DATABASE `wordpress-db1`;
+<br>
+GRANT ALL PRIVILEGES ON `wordpress-db`.* TO "wordpress-user"; --> This command will grant all privileges of wordpress database to wordpress user 1.e GRANT ALL PRIVILEGES ON `wordpress-db1`.* TO "loui-mariadb1";
+<br>
+
+![RDS23](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/afbfd189-13d3-42e1-ab8e-7d1739b18c2e)
+
+![RDS24](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/2a946779-2623-4d00-9d02-55678cc45308)
+
+
