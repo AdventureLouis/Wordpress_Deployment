@@ -24,9 +24,9 @@ sudo yum update -y --> This command will update your ec2 instance to latest vers
 <br>
 sudo amazon-linux-extras install mariadb10.5 --> This command will help to install the mariadb version 10.5
 <br>
-cat /etc/system-release -->
+cat /etc/system-release --> This will help to show your version of amazon linus installed
 <br>
-sudo amazon-linux-extras install php8.2 -->
+sudo amazon-linux-extras install php8.2 --> This command will help to install php8.2
 <br>
 sudo yum install -y httpd --> This command will help to install the http webserver and the flag y(-y) will help to automatically keep responding "yes" to prompts that needs response
 <br>
