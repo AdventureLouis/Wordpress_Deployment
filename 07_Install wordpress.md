@@ -158,6 +158,24 @@ cntr+x,y,enter on your keyboard
 
 #### Install wordpress file under the Apache document directory
 <br>
-Recall that in session 06,we already attached the ec2-user to Apache document directory group(/var/www/),now we want to attach our wordpress that is inside our ec2 instance to Apache document directory
+Recall that in session 06,we already attached the ec2-user to Apache document directory group(/var/www/),now we want to attach our wordpress that is inside our ec2 instance to Apache document directory(/var/www/html)
+
+```bash
+cp -r wordpress/* /var/www/html/
+sudo nano /etc/httpd/conf/httpd.conf
+```
+![RDS27](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/dabc43d3-7db6-4b56-af81-9f56cf620299)
+
+<br>
+cp -r wordpress/* /var/www/html/ --> The command will recursively(-r) copy all installation files from the wordpress folder into the Apache root directory
+<br>
+sudo nano /etc/httpd/conf/httpd.conf --> This command will the httpd configuration file in nano text editor
+<br>
+Once  httpd configuration file(httpd.conf) is open use command cntrl+w to open a search bar on nano and once the search bar is open paste
+ ''' <Directory "/var/www/html"> '''  to find it and change "AllowOverride None" to "AllowOverride All" as shown below
+<br>
+ 
+![RDS28](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/ca1ceb5f-ff87-4a55-92b0-f1cf01b86962)
+
 
 
