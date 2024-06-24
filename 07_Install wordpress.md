@@ -53,11 +53,18 @@ Now we are in Edit page of the resource group,click delete on the right corner t
 
 
 Now click "Add rule" under type choose "mysql/aurora",under protocol choose "TCP",under "port range" choose "3306",under "soure" choose "Custom" and click on search bar,scroll down until you find Bastion SG and click save
-
-
-
+<br>
 
 ```bash
 sudo systemctl start mariadb
 mysql -u your user name -h your DNS endpoint -p
 ```
+<br>
+sudo systemctl start mariadb --> This command will start your mariadb
+<br>
+mysql -u your user name -h your DNS endpoint -p --> With this command after flag u(-u) input your master username when you created RDS in  AWS managment console,after flag h(-h) input your DNS endpoint 
+<br>
+
+![RDS21](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/7d0edb85-a475-471f-9265-f0cf5b88b164)
+
+To get your DNS endpoint,open you AWS managment console on the search bar type RDS,click "Databases",once your database is open click on it to open your database,Under "Connectivity & security",on the left part you will see
