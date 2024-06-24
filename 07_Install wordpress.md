@@ -126,4 +126,38 @@ nano wordpress/wp-config.php --> This command will open  wp-config.php file in n
 
 ![RDS25](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/06b81e19-3aa6-4fc0-b823-73300429a4f9)
 
+<br>
+
+Once the text editor is open,keep scrolling down until you get to a place we you see "define('DB_NAME', 'wordpress-db');" and replace with your database name
+<br>
+Next scroll down to where you have "define('DB_USER', 'wordpress-user');" and replace with your database username
+<br>
+Next scroll down to where you have define('DB_PASSWORD', 'your_strong_password'); and replace with your strong password
+<br> 
+Next scroll down until you see below :
+define('AUTH_KEY',         ' #U$$+[RXN8:b^-L 0(WU_+ c+WFkI~c]o]-bHw+)/Aj[wTwSiZ<Qb[mghEXcRh-');
+define('SECURE_AUTH_KEY',  'Zsz._P=l/|y.Lq)XjlkwS1y5NJ76E6EJ.AV0pCKZZB,*~*r ?6OP$eJT@;+(ndLg');
+define('LOGGED_IN_KEY',    'ju}qwre3V*+8f_zOWf?{LlGsQ]Ye@2Jh^,8x>)Y |;(^[Iw]Pi+LG#A4R?7N`YB3');
+define('NONCE_KEY',        'P(g62HeZxEes|LnI^i=H,[XwK9I&[2s|:?0N}VJM%?;v2v]v+;+^9eXUahg@::Cj');
+define('AUTH_SALT',        'C$DpB4Hj[JK:?{ql`sRVa:{:7yShy(9A@5wg+`JJVb1fk%_-Bx*M4(qc[Qg%JT!h');
+define('SECURE_AUTH_SALT', 'd!uRu#}+q#{f$Z?Z9uFPG.${+S{n~1M&%@~gL>U>NV<zpD-@2-Es7Q1O-bp28EKv');
+define('LOGGED_IN_SALT',   ';j{00P*owZf)kVD+FVLn-~ >.|Y%Ug4#I^*LVd9QeZ^&XmK|e(76miC+&W&+^0P/');
+define('NONCE_SALT',       '-97r*V/cgxLmp?Zy4zUU4r99QQ_rGs2LTd%P;|_e1tS)8_B/,.6[=UK<J_y9?JWG');
+<br>
+You will need to replace above because they can be generated randomly,use link below
+<br>
+```bash
+https://api.wordpress.org/secret-key/1.1/salt/
+```
+In order to paste in your nano text editor first remove above with command cntrl+k until remove all then paste the new ones you copied from above site.close and save your nano text editor with commands
+
+```bash
+cntr+x,y,enter on your keyboard
+```
+<br>
+
+#### Install wordpress file under the Apache document directory
+<br>
+Recall that in session 06,we already attached the ec2-user to Apache document directory group(/var/www/),now we want to attach our wordpress that is inside our ec2 instance to Apache document directory
+
 
