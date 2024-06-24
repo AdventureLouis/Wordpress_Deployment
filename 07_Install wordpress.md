@@ -49,9 +49,8 @@ Next click "Inbound rules" and "Edit inbound rules" as we can see from above thi
 Now we are in Edit page of the resource group,click delete on the right corner to delete the resource group
 <br>
 
-![RDS18](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/9c93c08b-da75-4a0d-b2a9-4e2fcc6c3b8f)
+![RDS20](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/6e6fbbe9-9b6a-4627-98de-f1df95f8bf04)
 
-![RDS19](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/2d44a72c-054f-49b6-a962-3666f0c3ebf1)
 
 Now click "Add rule" under type choose "mysql/aurora",under protocol choose "TCP",under "port range" choose "3306",under "soure" choose "Custom" and click on search bar,scroll down until you find Bastion SG and click save
 
