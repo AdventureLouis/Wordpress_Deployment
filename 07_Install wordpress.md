@@ -99,9 +99,13 @@ CREATE DATABASE `wordpress-db`; --> This command will help create your database 
 <br>
 GRANT ALL PRIVILEGES ON `wordpress-db`.* TO "wordpress-user"; --> This command will grant all privileges of wordpress database to wordpress user 1.e GRANT ALL PRIVILEGES ON `wordpress-db1`.* TO "loui-mariadb1";
 <br>
+After running all commands above,type "show databses" to show your database
+<br>
 
 ![RDS23](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/afbfd189-13d3-42e1-ab8e-7d1739b18c2e)
 
 ![RDS24](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/2a946779-2623-4d00-9d02-55678cc45308)
+<br>
+
 
 
