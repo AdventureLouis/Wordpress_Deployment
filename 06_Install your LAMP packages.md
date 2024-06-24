@@ -75,17 +75,6 @@ sudo yum list installed httpd mariadb-server php-mysqlnd --> This command will i
 rm /var/www/html/phpinfo.php -->This command will delete the file phpinfo.php
 
 
-#### Secure  Maridb database server
-<br>
-Recall that we have previously installed the mariadb database,now we need to remove every insecure installation from the mariadb
 
-```bash
-sudo systemctl start mariadb
-sudo mysql_secure_installation
-```
-<br>
-sudo systemctl start mariadb --> This command will start the mariadb
-<br>
-sudo mysql_secure_installation --> This command will enable the secure installation of mysql
 
 
