@@ -15,4 +15,15 @@ sudo systemctl start mariadb
 ```
 ![install_wp1](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/56d62e5e-5d14-40d5-9a33-b029b4344f94)
 <br>
-wget https://wordpress.org/latest.tar.gz-->This command will help install the wordpress in zip format
+wget https://wordpress.org/latest.tar.gz-->This command will help install the wordpress in zip format using tar .gz
+<br>
+tar -xzf latest.tar.gz --> This command will unzip and extract the installation files into a folder called  the wordpress 
+<br>
+
+#### Create a database user and database for the wordpress
+<br>
+
+```bash
+sudo systemctl start mariadb
+mysql -u root -h
+```
