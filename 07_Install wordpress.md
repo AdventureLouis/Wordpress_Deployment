@@ -172,7 +172,8 @@ cp -r wordpress/* /var/www/html/ --> The command will recursively(-r) copy all i
 sudo nano /etc/httpd/conf/httpd.conf --> This command will the httpd configuration file in nano text editor
 <br>
 Once  httpd configuration file(httpd.conf) is open use command cntrl+w to open a search bar on nano and once the search bar is open paste
- ''' <Directory "/var/www/html"> '''  to find it and change "AllowOverride None" to "AllowOverride All" as shown below
+
+ ```  <Directory "/var/www/html"> ```  to find it and change "AllowOverride None" to "AllowOverride All" as shown below
 <br>
  
 ![RDS28](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/ca1ceb5f-ff87-4a55-92b0-f1cf01b86962)
