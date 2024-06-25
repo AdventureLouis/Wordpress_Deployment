@@ -185,5 +185,26 @@ Once  httpd configuration file(httpd.conf) is open use command cntrl+w to open a
 sudo yum install php-gd
 sudo yum list installed php-gd
 ```
+<br>
+sudo yum install php-gd --> This command utilizes the root super privilege to install php graphics drawing library
+<br>
+sudo yum list installed php-gd -->This command verify the installed version of php graphics drawing library
 
+![RDS29](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/88947dbb-0b7c-49e8-89b1-943b507c08e9)
+
+#### File permissions to Apache Webserver
+<br>
+
+```bash
+sudo chown -R apache /var/www
+sudo chgrp -R apache /var/www
+sudo chmod 2775 /var/www
+find /var/www -type d -exec sudo chmod 2775 {} \;
+find /var/www -type f -exec sudo chmod 0644 {} \;
+sudo systemctl restart httpd
+```
+<br>
+sudo chown -R apache /var/www -->This command will recursively copy wordpress files that is currently in apache root directory into apache web server
+<br>
+sudo chgrp -R apache /var/www -->
 
