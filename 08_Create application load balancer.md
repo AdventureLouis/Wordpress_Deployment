@@ -44,4 +44,60 @@ Under "VPC" select the VPC we previously created
 Under "Network mapping" choose the 3 public subnets
 <br>
 
-Under "Security Group" choose the Bastion SG
+![ALB14](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/25092f82-090c-4de8-94f2-c7da4c638e2f)
+
+<br>
+Under "Security Group" here we need to create a new security group that will route traffic from anywhere
+<br>
+In creating a new security group,we give a name to the new security group
+<br>
+Under inbound rules for the new security group,set type to HTTP,protocol to TCS,port to 80  and source to anywhere
+<br>
+Under "Listener" for protocol choose "HTTP",for "port" choose 80
+<br>
+![ALB7](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/186d5a19-c232-4142-bbd3-6d1074912a6f)
+<br>
+Under "Default action" choose create target group
+<br>
+Now its time to create a target group in a new tab,under choose target type,select "instances"
+<br>
+
+![ALB8](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/c692e5a8-3f9c-4751-8b9d-c696e4af10ae)
+
+Under target group name,give a name to your target group
+<br>
+Under "Protocol : Port",choose HTTP and port 80
+<br>
+Under "IP address type" choose IPV4 
+<br>
+Under VPC,choose the VPC we previously created
+<br>
+Under "Protocol version" choose HTTP1
+<br>
+
+![ALB9](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/4f4e8eaa-b359-4720-9088-197a807db271)
+![ALB10](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/b145490e-239f-423a-a778-e8af8f83ff87)
+
+Under "health checks" for health check protocol,leave it at http
+<br>
+Under "Health check protocol" leave it at default
+<br>
+Under "Advanced health check settings" scroll down until you get to "Success codes" and leave it at 200 and 302
+<br>
+
+![ALB15](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/5910929f-dab7-41f7-959f-1731110f3dd7)
+![ALB16](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/96630ddf-a86d-4ce5-9de8-e18014465338)
+
+<br>
+Click next
+<br>
+Under "Register targets" check the boxes next to the private ec2  instance and click "Include as pending" as shown above and click create target group
+
+![ALB17](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/633e8d63-01f7-4a3c-8427-e30613f96ef1)
+
+<br>
+Now that we have successfully created a new target group
+<br>
+We can now go back to the Application load balancer creation page select a target group under "Listeners and routing" and click on refresh icon next to select a target group
+<br>
+Now click on the drop-down arrow and select the new target group you just created scroll down and click create load balancer
