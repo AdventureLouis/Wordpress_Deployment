@@ -101,3 +101,26 @@ Now that we have successfully created a new target group
 We can now go back to the Application load balancer creation page select a target group under "Listeners and routing" and click on refresh icon next to select a target group
 <br>
 Now click on the drop-down arrow and select the new target group you just created scroll down and click create load balancer
+
+![ALB18](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/e37761e2-e2e7-497d-a963-602c7c718010)
+
+![ALB19](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/6093be8c-12f2-43de-8345-16c7affd83fb)
+
+Now that we have successfully created the application load balancer,its time open our wordpress server
+<br>
+Navigate to your load balancer,check on the box next to the load balancer and under Details copy your DNS name and paste it on a new tab
+to open the wordpress page for the first time
+<br>
+
+![ALB20](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/54f0e455-484a-48b6-bf92-e1da87e1c73c)
+<br>
+Once the wordpress page is open ,click  continue
+<br>
+Fill in all neccessary information of your site and click install wordpress
+<br>
+![ALB21](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/2822b1e9-bbec-4530-a43e-4821a0103d8c)
+![ALB22](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/bbdf711d-d515-4500-9abd-e046258311ec)
+<br>
+Now add /wp-admin next to the url name and you will be prompted to input your password and click login
+<br>
+Now we have successfully loged into our wordpress site admin page as seen above
