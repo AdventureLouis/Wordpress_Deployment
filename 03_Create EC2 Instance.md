@@ -133,4 +133,31 @@ Seems we know that we cannot ssh with this EC2 instance that is in a private sub
 
 Click add rules again,under "Type" choose SSH,under "Protocol" choose "TCP",under "port range" choose 22,under "source" choose custom
 in the search bar search for "the Bastion-sg" we previously created and click save rules
+<br>
+
+![ALB18](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/e37761e2-e2e7-497d-a963-602c7c718010)
+
+![ALB19](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/6093be8c-12f2-43de-8345-16c7affd83fb)
+
+Now that we have successfully created the application load balancer,its time open our wordpress server
+<br>
+Navigate to your load balancer,check on the box next to the load balancer and under Details copy your DNS name and paste it on a new tab
+to open the wordpress page for the first time
+<br>
+
+![ALB20](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/54f0e455-484a-48b6-bf92-e1da87e1c73c)
+
+Once the wordpress page is open ,click on continue
+<br>
+Fill in all neccessary information of your site and click install wordpress
+<br>
+
+![ALB21](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/2822b1e9-bbec-4530-a43e-4821a0103d8c)
+![ALB22](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/bbdf711d-d515-4500-9abd-e046258311ec)
+
+<br>
+Now add /wp-admin next to the url name and you will be prompted to input your password and click login
+<br>
+Now we have successfully loged into our wordpress site admin page
+
 
