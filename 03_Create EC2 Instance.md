@@ -102,11 +102,12 @@ Give the security group a name as seen above,set "Type" to "SSH",set "source Typ
 
 #### Configure Resource Group
 <br>
-Its time to add more configuration to the resource we creating when we where creating the EC2 instance
+Its time to add more configuration to  the EC2 instance
 <br>
 The configuration will be adding HTTP on port 80 and HTTPS on port 443
 <br>
-
+Note that the reason I have decided to add HTTP and HTTPS configuration is because traffic can be routed from the ec2 in the private subnet to the application load balancer.
+<br>
 ![EC2_10](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/f1406b59-79eb-4153-ba5c-ca9e10f104d0)
 
 To achieve this,check on the box next to your ec2 instance and under security tab you will see the security group we created now click to open it
