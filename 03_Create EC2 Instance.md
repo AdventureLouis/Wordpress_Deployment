@@ -131,6 +131,6 @@ Again Click add rule and under "Type" choose HTTPS,under "Protocole" choose "TCP
 Seems we know that we cannot ssh with this EC2 instance that is in a private subnet,delete the ssh  as seen above
 <br>
 
-Click add rules again,under "Type" choose SSH,under "Protocole" choose "TCP",under "port range" choose 22,under "source" choose custom
+Click add rules again,under "Type" choose SSH,under "Protocol" choose "TCP",under "port range" choose 22,under "source" choose custom
 in the search bar search for "the Bastion-sg" we previously created and click save rules
 
