@@ -82,7 +82,7 @@ Under "health checks" for health check protocol,leave it at http
 <br>
 Under "Health check protocol" leave it at default
 <br>
-Under "Advanced health check settings" scroll down until you get to "Success codes" and leave it at 200 and 302
+Under "Advanced health check settings" scroll down until you get to "Success codes" and leave it at 200 and 302,this is because 200 and 302 can be success codes
 <br>
 
 ![ALB15](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/5910929f-dab7-41f7-959f-1731110f3dd7)
