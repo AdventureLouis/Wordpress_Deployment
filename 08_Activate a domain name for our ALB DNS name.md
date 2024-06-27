@@ -36,10 +36,13 @@ Under routing policy,choose simple routing and click create record
 Now on a new tab start typing your domain name with www i.e www.lab-loui.org,and this will take your wordpress site same as before when we used the application load balancer DNS name
 <br>
 
+![Route53_6](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/0adff88f-006a-4e88-a54b-b01ab8cc8ce0)
+
+
 
 Once last step is to register our DNS name on the wordpress admin,so on a new tab open with your domain name again this time add /wp-admin and this will take you to the admin page of your wordpress.
 <br>
-on the admin page of the wordpress,scroll on the left pane and click the following settings>General
+on the admin page of the wordpress,scroll on the left pane and click the following settings>General as seen above
 <br>
 
 ![Route53_4](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/6cf2737e-4489-41ea-9675-0d5e5c7eac11)
@@ -47,3 +50,11 @@ on the admin page of the wordpress,scroll on the left pane and click the followi
 Now go back to previous tab where you have your domain name and copy it as shown above
 <br>
 On the general page,scroll down to "Wordpress Address URL" and paste the the domain name you just copied
+<br>
+
+![Route53_6](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/3d3747b3-d380-403f-a08c-0d273d2e511d)
+
+![Route53_7](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/10910b44-3f3d-429c-94ec-b46462d22318)
+<br>
+
+Above images are before and after pasting your new domain name into "Wordpress Address (URL) and "Site Address(URL)"
