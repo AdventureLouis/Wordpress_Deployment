@@ -58,3 +58,16 @@ On the general page,scroll down to "Wordpress Address URL" and paste the the dom
 <br>
 
 Above images are before and after pasting your new domain name into "Wordpress Address (URL) and "Site Address(URL)"
+<br>
+
+![Route53_8](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/c31f442e-4c71-4369-8db4-2e663cb91505)
+<br>
+So after pasting your new url you click save and you will be prompted to login again into your wordpress as shown above
+<br>
+
+![Route53_10](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/a5e4f7a2-996f-4d38-9540-04200cebe122)
+
+<br>
+And after login,we can now see that our url now begins with "www" as seen above
+<br>
+
