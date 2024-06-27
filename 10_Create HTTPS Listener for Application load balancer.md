@@ -51,3 +51,13 @@ Under default actions select "Redirect to URL"
 ![HTTPS6](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/b7040a91-bc7f-4374-9717-e4c6e0bbe38d)
 <br>
 Under protocol leave it at HTTPS and under port type 443 and click save changes
+<br>
+
+![HTTPS7](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/e3da42c6-76c4-43ed-8fc5-0826209cccca)
+<br>
+Now we can see our protocolsn are working fine as seen above
+<br>
+
+![HTTPS8](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/cbf77c6a-25c2-4570-bd23-eb68e112af29)
+
+We can now retype the wordpress site with "https://www.lab-loui.org/" as seen above and so our website is now secured
