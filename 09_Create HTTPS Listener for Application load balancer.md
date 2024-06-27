@@ -9,3 +9,5 @@ To configure the HTTPS,on your AWS management console,navigate to the search bar
 On the load balancer page,check the box next to the application load balancer 
 <br>
 Click on "Listener and rules" tab and click add Listener
+<br>
+
