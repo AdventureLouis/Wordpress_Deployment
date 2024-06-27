@@ -53,6 +53,11 @@ In creating a new security group,we give a name to the new security group
 <br>
 Under inbound rules for the new security group,set type to HTTP,protocol to TCS,port to 80  and source to anywhere
 <br>
+
+![ALB24](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/c7495440-021a-4e73-8b93-c25e2ccd74b2)
+
+Still under inbound rule,click add rule again,set type to HTTPS,protocol to TCP,port to 443 as shown above
+<br>
 Under "Listener" for protocol choose "HTTP",for "port" choose 80
 <br>
 ![ALB7](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/186d5a19-c232-4142-bbd3-6d1074912a6f)
