@@ -5,6 +5,7 @@ and the website's server remains confidential and cannot be intercepted or tampe
 ![SSL1](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/0fb2c4c3-a5d6-47c3-bf8c-6ff0bdb3b0e4)
 
 AWS certificate manager(ACM) is service managed by AWS,we will use it to register SSL and will use the certificate to encrypt the communication between the web browser and our web servers
+Before you get to this stage you should already have a domain name
 <br>
 To access the ACM,on your management console navigate to the search bar and type certificate manager
 <br>
