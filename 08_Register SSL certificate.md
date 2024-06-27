@@ -24,3 +24,18 @@ Under "Fully qualified domain name" type your domain name and click "Add another
 Under  validation method choose DNS validation
 <br>
 Under key algorithm choose RSA 2048 and click request
+<br>
+
+![SSL4](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/b9aa5a62-21c9-46c1-b1b5-aa987f51a7c4)
+We should notice that at this point,the status is still showing pending validation,so in order to change the status to "success" we need to create a record set in route 53 to validate that the digital domain name belongs to us,so create record set as shown above
+<br>
+
+![SSL5](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/6e55e876-361b-4ea9-bde5-224087dfdb21)
+After clicking create record set,you will be taken to "Create DNS records in Amazon Route" page,in this page check the two boxes next 
+to your two domain names and click create records as shown above.
+<br>
+
+![SSL6](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/6762bbbf-839d-47a8-8723-60e120dfd32a)
+
+
+Now we can see that the status as changed to "Success" as shown above
