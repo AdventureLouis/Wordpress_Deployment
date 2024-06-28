@@ -61,3 +61,12 @@ Now we can see our protocolsn are working fine as seen above
 ![HTTPS8](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/cbf77c6a-25c2-4570-bd23-eb68e112af29)
 
 We can now retype the wordpress site with "https://www.lab-loui.org/" as seen above and so our website is now secured
+<br>
+
+![HTTPS9](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/2d0cda74-9afc-421f-9fb1-18a953119148)
+<br>
+One last step now is to ensure we register our https in the wordpress admin and to achieve this just type /wp-admin after the domain name
+as seen above
+<br>
+
+So now we are in the admin page,scroll down on the left pane and select settings>General and 
