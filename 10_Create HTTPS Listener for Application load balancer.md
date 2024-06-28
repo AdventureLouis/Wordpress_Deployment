@@ -69,4 +69,7 @@ One last step now is to ensure we register our https in the wordpress admin and 
 as seen above
 <br>
 
-So now we are in the admin page,scroll down on the left pane and select settings>General and 
+![HTTPS10](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/a9f79ee2-35ec-4b10-84aa-9aa3006cbce5)
+<br>
+So now we are in the admin page,scroll down on the left pane and select settings>General and on Wordpress Address(URL) and site Address(URL)
+paste your new domain name with now has https in front as seen above
