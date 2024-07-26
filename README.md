@@ -15,4 +15,5 @@
 -  Bastion EC2
 -  Relational Database
 -  Route 53
+-  AWS certficate manager
   
