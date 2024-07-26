@@ -1,6 +1,6 @@
 ### Deploy a MariaDB RDS
+![System_Achitecture](https://github.com/user-attachments/assets/6e426c62-7e01-49d8-8d30-5d60e47b56c1)
 
-![DIagram_Architecture](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/be1167c5-1c2b-46ed-b011-01573607159f)
 
 <br>
 The RDS we will be deploying in the session is Mariadb and the reason is because MariadDB is widely used and when compared to Mysql Mariadb is slightly faster
