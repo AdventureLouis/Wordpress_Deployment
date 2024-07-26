@@ -3,7 +3,8 @@
 
 ## Wordpress deployment in AWS managmenent console
 
-![DIagram_Architecture](https://github.com/user-attachments/assets/01aee5d9-3152-4019-807f-d2c54dcc593b)
+![System_Achitecture](https://github.com/user-attachments/assets/1db0c01e-4a05-4862-9aa7-456bc8715144)
+
 
 ## The resources used for this project include:
 <br>
