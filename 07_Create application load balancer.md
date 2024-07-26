@@ -3,7 +3,9 @@
 
 
 <br>
+
 ### Create and configure Application load balancer(ALB)
+
 <br>
 Through the application load balancer the user can interact with bastion ec2 in the public subnet,that is the bastion ec2 instance will only accept traffic from the application load balancer.
 <br>
