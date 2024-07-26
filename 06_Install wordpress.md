@@ -1,6 +1,8 @@
 ### Install Wordpress
 
-![DIagram_Architecture](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/cc8f3287-bb38-48dc-ab58-fca8dcb7c660)
+![System_Achitecture](https://github.com/user-attachments/assets/fdb379fe-cf7a-4256-92f8-b3272f4d29a4)
+
+
 <br>
 Now its time to install the wordpress
 <br>
