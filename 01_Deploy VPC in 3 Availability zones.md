@@ -1,6 +1,7 @@
 ### VPC Deployment in three Availabilty zones
 
-![DIagram_Architecture](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/796daac1-258c-4727-9aa5-e6d45a40a2e2)
+![System_Achitecture](https://github.com/user-attachments/assets/73a5fac4-16a3-4ed8-b906-8433f64e0730)
+
 
 <br>
 In this course I will be utilizing AWS Management console,so open your amazon management console click on the search bar and type VPC,
