@@ -1,5 +1,7 @@
 
-![DIagram_Architecture](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/4d507402-aac6-4234-bb14-6a8867e7bc06)
+![System_Achitecture](https://github.com/user-attachments/assets/1988fdc1-0a5f-41da-9d4a-d0cf907754a1)
+
+
 <br>
 ### Create and configure Application load balancer(ALB)
 <br>
