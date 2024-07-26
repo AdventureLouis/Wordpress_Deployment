@@ -1,6 +1,8 @@
 ### Update EC2 and install your LAMP packages
 
-![DIagram_Architecture](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/fc01464b-1570-4cc3-b129-d07a16117133)
+![System_Achitecture](https://github.com/user-attachments/assets/71796aa4-a3fb-4b1b-8044-7a63766b44f9)
+
+
 <br>
 Now you need to ssh in your ec2 instance,update the ec2 to latest version and install LAMP(Linux,Apache,Mysql,PHP) services.In order to be able to successfully install the wordpress we need all these services.
 <br>
