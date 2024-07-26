@@ -10,7 +10,7 @@
 <br>
 
 -  VPC
--  3 Private subnets and 3 Public subnets
+-  3 Private Subnets and 3 Public Subnets
 -  EC2 Instance
 -  Application load balancer
 -  Bastion EC2
