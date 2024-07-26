@@ -1,6 +1,7 @@
 #### SSH into the EC2 Instance from Terminal
 
-![DIagram_Architecture](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/6af2c1b9-371a-4aa5-a6ef-230b45f6f6be)
+![System_Achitecture](https://github.com/user-attachments/assets/2d61cab0-309d-44e4-b51f-d0a235cf73a0)
+
 
 ##### For MAC/Linux users
 <br>
