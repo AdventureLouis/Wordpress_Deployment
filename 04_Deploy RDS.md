@@ -16,7 +16,7 @@ Once its open on the left pane click "Databases"
 <br>
 Under "create Database" choose "Standard create"
 <br>
-Under "Engine options" choose "MariDB"
+Under "Engine options" choose "MariaDB"
 
 ![RDS3](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/c8e0ecfd-0e42-4ce1-a1be-1300631f243d)
 

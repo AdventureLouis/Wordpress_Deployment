@@ -5,7 +5,7 @@
 
 <br>
 In this course I will be utilizing AWS Management console,so open your amazon management console click on the search bar and type VPC,
-and when the VPC page opens,click on "VPC and more",by clicking VPC and more you will be able to create VPC and many other resources such as public and private subnets,route-tables etc
+and when the VPC page opens,click on "VPC and more",by clicking VPC and more you will be able to create VPC and many other resources such as public and private subnets,route-tables and it will also help handle the subnets associtaions
 <br>
 
 ![VPC1](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/e397c27a-4162-4a40-8b19-1931357f12c9)
@@ -37,6 +37,8 @@ As we can see in below diagram,the VPC and related resources is creating so wait
 
 ### View VPC and resource map
 Below we can see the newly created VPC and its resources
+As can be seen from the map,the single public route table  will help route traffic from the internet gateway to all the 3 public subnets,
+<br>
 
 ![VPC4](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/4fa93294-686e-4340-886f-6351b149fc50)
 )
