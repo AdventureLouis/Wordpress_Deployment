@@ -2,6 +2,7 @@
 <br>
 
 ## Wordpress deployment in AWS managmenent console
+### In this project I deployed a wordpress to AWS using different AWS services
 
 ![System_Achitecture](https://github.com/user-attachments/assets/1db0c01e-4a05-4862-9aa7-456bc8715144)
 
