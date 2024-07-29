@@ -1,7 +1,8 @@
 ### Install Wordpress
 
-![System_Achitecture](https://github.com/user-attachments/assets/fdb379fe-cf7a-4256-92f8-b3272f4d29a4)
 
+
+![System_Architecture_By_Louis](https://github.com/user-attachments/assets/48fb06a6-3669-4b6b-995c-aca8637b034d)
 
 <br>
 Now its time to install the wordpress
