@@ -1,6 +1,6 @@
 #### SSH into the EC2 Instance from Terminal
 
-![System_Achitecture](https://github.com/user-attachments/assets/2d61cab0-309d-44e4-b51f-d0a235cf73a0)
+![System_Architecture_By_Louis](https://github.com/user-attachments/assets/7e4ac40f-8db6-4aa6-a8a8-391ce989d0e9)
 
 
 ##### For MAC/Linux users
