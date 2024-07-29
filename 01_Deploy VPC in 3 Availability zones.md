@@ -1,6 +1,7 @@
 ### VPC Deployment in three Availabilty zones
 
-![System_Achitecture](https://github.com/user-attachments/assets/73a5fac4-16a3-4ed8-b906-8433f64e0730)
+
+![System_Architecture_By_Louis](https://github.com/user-attachments/assets/ca54efc9-12b8-4f01-88b9-b758286da1fe)
 
 
 <br>
