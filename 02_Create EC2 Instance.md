@@ -1,6 +1,7 @@
 ### Launch EC2 instance using Amazon Linux 2(AL2)
 
-![System_Achitecture](https://github.com/user-attachments/assets/32bf8906-fd27-47d9-b061-53aa5251dd57)
+![System_Architecture_By_Louis](https://github.com/user-attachments/assets/f10e524a-a566-4667-97b9-98715e519d23)
+
 
 In this project we will be hosting the wordpress website with the help of LAMP(Linux,Apache,Mysql and PHP) services and before we can the LAMP services we first need to launch an EC2 instance
 <br>
