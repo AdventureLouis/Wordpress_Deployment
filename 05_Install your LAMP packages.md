@@ -1,6 +1,7 @@
 ### Update EC2 and install your LAMP packages
 
-![System_Achitecture](https://github.com/user-attachments/assets/71796aa4-a3fb-4b1b-8044-7a63766b44f9)
+
+![System_Architecture_By_Louis](https://github.com/user-attachments/assets/99efb561-c57c-4e8c-8d53-9da88038caa3)
 
 
 <br>
