@@ -1,5 +1,6 @@
 ### Deploy a MariaDB RDS
-![System_Achitecture](https://github.com/user-attachments/assets/6e426c62-7e01-49d8-8d30-5d60e47b56c1)
+
+![System_Architecture_By_Louis](https://github.com/user-attachments/assets/bfd16425-d360-4ee3-b51c-ce498ecfddc1)
 
 
 <br>
