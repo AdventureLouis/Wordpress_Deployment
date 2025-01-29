@@ -1,11 +1,11 @@
 ### Activate a Domain name for our ALB DNS name
 <br>
-I already registered a domain name on AWS,now to point our application load balancer DNS name we will need to create a record set on route  53
+I already registered a domain name on AWS,now to point our application load balancer to DNS name we will need to create a record set on route  53
 <br>
 
 ![Route53_1](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/cd6bc8e9-c33b-4841-9f2f-64db4fc24941)
 
-On your AWS management console navigate to the search bar and typr route 53,once the route 53 is opened,click on the hosted zone to open it
+On your AWS management console navigate to the search bar and type route 53,once the route 53 is opened,click on the hosted zone to open it
 <br>
 
 ![Route53_2](https://github.com/AdventureLouis/Wordpress_Deployment_To_AWS_2/assets/161846069/f70f24d0-c68e-471c-87c6-ac8f59b9fe58)
